@@ -58,3 +58,13 @@ largest number in hex
 css properties that will be involved!
 * display
 * width / height
+could be involved:
+* position
+* top / left / bottom / right
+
+
+# ways to scooch a div over horizontally
+* put it inside a display:flex
+  * justify-content ^^
+* left: 50%
+* margin: 
