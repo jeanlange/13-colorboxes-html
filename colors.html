@@ -27,10 +27,10 @@
         }
     </style>
     <script>
-        const changeColor = () => {
+        const changeColor = (myId) => {
             console.log("hello world!");
             // find the div
-            const myDiv = document.getElementById("dakota")
+            const myDiv = document.getElementById(myId)
 
             var randomColor = Math.floor(Math.random()*16777215).toString(16);
             // set its color to a random color
@@ -40,16 +40,11 @@
 </head>
 <body>
     <div class="container">
-        <div id="dakota" onmouseenter="changeColor()"></div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
+        <div id="dakota" onmouseenter="changeColor('dakota')"></div>
+        <div id="nathan" onmouseenter="changeColor('nathan')"></div>
+        <div id="jean" onmouseenter="changeColor('jean')"></div>
+        <div id="john" onmouseenter="changeColor('john')"></div>
+        <div id="ari" onmouseenter="changeColor('ari')"></div>
     </div>
 </body>
 </html>
