@@ -28,7 +28,6 @@
     </style>
     <script>
         const changeColor = (myId) => {
-            console.log("hello world!");
             // find the div
             const myDiv = document.getElementById(myId)
 
@@ -36,15 +35,20 @@
             // set its color to a random color
             myDiv.style.backgroundColor = "#" + randomColor;
         }
+            
     </script>
 </head>
 <body>
     <div class="container">
-        <div id="dakota" onmouseenter="changeColor(id)"></div>
-        <div id="nathan" onmouseenter="changeColor(id)"></div>
-        <div id="jean" onmouseenter="changeColor(id)"></div>
-        <div id="john" onmouseenter="changeColor(id)"></div>
-        <div id="ari" onmouseenter="changeColor(id)"></div>
     </div>
+    <script>
+        let boxes = "";
+        for(i = 0; i<5000; i++) {
+            const newBox = "<div id=" + i + " onmouseenter=\"changeColor(id)\"></div>";
+            boxes += newBox;
+        }
+
+        document.getElementsByClassName("container")[0].innerHTML = boxes;
+    </script>
 </body>
 </html>
