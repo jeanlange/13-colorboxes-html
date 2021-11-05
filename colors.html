@@ -26,9 +26,20 @@
             float: left;
         }
     </style>
+    <script>
+        const changeColor = () => {
+            console.log("hello world!");
+            // find the div
+            const myDiv = document.getElementById("dakota")
+            // set its color to blue
+            myDiv.style.backgroundColor = "blue";
+        }
+    </script>
 </head>
 <body>
     <div class="container">
+        <div id="dakota" onClick="changeColor()"></div>
+        <!-- <div></div>
         <div></div>
         <div></div>
         <div></div>
@@ -36,9 +47,7 @@
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div> -->
     </div>
 </body>
 </html>
