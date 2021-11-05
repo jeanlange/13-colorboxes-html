@@ -13,7 +13,7 @@ Multiple ways to specify colors
 # protips
 * use the inspector to do experiments - save the good result into your code
 * Make sure /something/ is happening before trying to make /the real thing/ happen - console.logo
-
+* use patterns that you know how to use, then adjust to what you want?
 
 # number representations
 You can represent a number in different ways.

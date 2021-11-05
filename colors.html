@@ -31,14 +31,16 @@
             console.log("hello world!");
             // find the div
             const myDiv = document.getElementById("dakota")
-            // set its color to blue
-            myDiv.style.backgroundColor = "blue";
+
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            // set its color to a random color
+            myDiv.style.backgroundColor = "#" + randomColor;
         }
     </script>
 </head>
 <body>
     <div class="container">
-        <div id="dakota" onClick="changeColor()"></div>
+        <div id="dakota" onmouseenter="changeColor()"></div>
         <!-- <div></div>
         <div></div>
         <div></div>
