@@ -27,9 +27,9 @@
         }
     </style>
     <script>
-        const changeColor = (myId) => {
+        const changeColor = (theHover) => {
             // find the div
-            const myDiv = document.getElementById(myId)
+            const myDiv = theHover.target;
 
             var randomColor = Math.floor(Math.random()*16777215).toString(16);
             // set its color to a random color
@@ -40,11 +40,13 @@
 </head>
 <body>
     <div class="container">
+        <div onmouseenter="changeColor(event)"></div>
+        <div onmouseenter="changeColor(event)"></div>
     </div>
     <script>
         let boxes = "";
         for(i = 0; i<5000; i++) {
-            const newBox = "<div id=" + i + " onmouseenter=\"changeColor(id)\"></div>";
+            const newBox = "<div onmouseenter=\"changeColor(event)\"></div>";
             boxes += newBox;
         }
 
